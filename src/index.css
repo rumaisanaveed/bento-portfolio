@@ -6,6 +6,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.koulen-regular {
+  font-family: "Koulen", sans-serif;
+}
+
 @font-face {
   font-family: "cameraObscura";
   src: url("./fonts/camera_obscura/CameraObscuraDEMO.otf") format("opentype");

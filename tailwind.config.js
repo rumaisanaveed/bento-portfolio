@@ -9,6 +9,11 @@ export default {
         "custom-black": "#282828",
         "dark-blue": "#0A66C2",
       },
+
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom right, #7017FF 0%, #C500E9 30%, #ED00C0 50%, #F80261 71%, #FF1B90 100%)",
+      },
     },
   },
   plugins: [],
