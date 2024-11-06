@@ -16,21 +16,27 @@ import ResumakerFour from "../assets/images/resumakerFour.png";
 export const skills = [
   {
     img: React,
+    tooltipText: "React.js",
   },
   {
     img: Tailwind,
+    tooltipText: "Tailwind CSS",
   },
   {
     img: Next,
+    tooltipText: "Next.js",
   },
   {
     img: Firebase,
+    tooltipText: "Firebase",
   },
   {
     img: Typescript,
+    tooltipText: "TypeScript",
   },
   {
     img: Framer,
+    tooltipText: "Framer Motion",
   },
 ];
 

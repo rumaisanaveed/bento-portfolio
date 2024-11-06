@@ -25,15 +25,17 @@ export const Project = () => {
             <h1 className="text-black text-3xl lg:text-4xl koulen-regular font-medium">
               {projectData.title}
             </h1>
-            <button className="text-base max-w-36 font-medium flex items-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-4 py-1">
-              <p>Live Demo</p>
-              <img src={RightArrow} alt="arrow" />
-            </button>
+            {projectId === 1 && (
+              <DemoButton to="https://emoji-vault.vercel.app/" />
+            )}
+            {projectId === 2 && (
+              <DemoButton to="https://resume-maker-kit.netlify.app/" />
+            )}
           </div>
           <p className="text-black font-medium text-xl max-w-md">
             {projectData.description}
           </p>
-          <div className="flex items-center flex-wrap gap-2">
+          <div className="flex items-center flex-wrap gap-2 md:max-w-md w-full">
             {projectData.techStack.map((skill, index) => (
               <div
                 key={index}
@@ -119,5 +121,21 @@ export const Project = () => {
         </div>
       )}
     </MainLayout>
+  );
+};
+
+const DemoButton = ({ to }) => {
+  return (
+    <a
+      href={to}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex"
+    >
+      <button className="text-base max-w-36 font-medium flex items-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-4 py-1">
+        <p>Live Demo</p>
+        <img src={RightArrow} alt="arrow" />
+      </button>
+    </a>
   );
 };

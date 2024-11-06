@@ -7,6 +7,7 @@ export const CustomLink = ({ path }) => {
     <Link
       to={path}
       className="flex items-center justify-center bg-white backdrop-blur-md rounded-full absolute bottom-3 left-3 shadow-md h-10 w-10"
+      target="_blank"
     >
       <img src={UpArrow} alt="arrow" />
     </Link>

@@ -10,6 +10,7 @@ import { experience, skills } from "../constants";
 import Resume from "../assets/icons/resume.svg";
 import { useNavigate } from "react-router-dom";
 import { CustomLink } from "../components/Buttons/CustomLink";
+import resume from "../resume.pdf";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -19,10 +20,7 @@ export const Home = () => {
   const handleProjectTwoClick = () => {
     navigate("/project/2");
   };
-  // calc(50vw-40px) calc(25vw-40px)
-  // resume download
-  // email on contact button
-  // show tooltips on skills with their names
+
   return (
     <MainLayout>
       <div className="grid grid-cols-2 md:w-[80%] md:mx-auto grid-rows-[repeat(13,auto)] lg:grid-rows-[repeat(4,auto)] lg:grid-cols-4 gap-3">
@@ -111,10 +109,14 @@ const Skills = () => {
       <div className="w-full">
         {skills.map((skill, index) => (
           <div
-            className="bg-dark-black mr-1 p-4 h-16 w-16 inline-block rounded-2xl"
+            className="bg-dark-black group relative mr-1 p-4 h-16 w-16 inline-block rounded-2xl"
             key={index}
           >
             <img src={skill.img} alt="skill" />
+            <div className="absolute left-[50%] opacity-0 group-hover:opacity-100 top-[115%] origin-top -translate-x-1/2 z-40 bg-[#444444] text-sm text-white whitespace-nowrap rounded px-3 py-1">
+              <span>{skill.tooltipText}</span>
+              <div className="absolute w-3 h-3 bg-[#444444] transform -translate-x-1/2 rotate-45 origin-top top-[-15%] left-[50%]"></div>
+            </div>
           </div>
         ))}
       </div>
@@ -127,7 +129,9 @@ const ResumeDownload = () => {
     <div className="flex items-center justify-center relative bg-custom-black rounded-3xl border-none row-start-3 row-end-4 col-start-2 col-end-3 lg:row-start-3 lg:row-end-4 lg:col-start-4 lg:col-end-5">
       <div className="mt-[100%]"></div>
       <img src={Resume} alt="resume" />
-      <Button icon={true} />
+      <a href={resume} download="RumaisaResume - FrontendDeveloper">
+        <Button icon={true} />
+      </a>
     </div>
   );
 };
