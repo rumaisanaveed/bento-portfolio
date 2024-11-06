@@ -129,7 +129,7 @@ const ResumeDownload = () => {
     <div className="flex items-center justify-center relative bg-custom-black rounded-3xl border-none row-start-3 row-end-4 col-start-2 col-end-3 lg:row-start-3 lg:row-end-4 lg:col-start-4 lg:col-end-5">
       <div className="mt-[100%]"></div>
       <img src={Resume} alt="resume" />
-      <a href={resume}>
+      <a href={resume} download="RumaisaResume - Frontend Developer">
         <Button icon={true} />
       </a>
     </div>
