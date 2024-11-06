@@ -20,6 +20,9 @@ export const Home = () => {
     navigate("/project/2");
   };
   // calc(50vw-40px) calc(25vw-40px)
+  // resume download
+  // email on contact button
+  // show tooltips on skills with their names
   return (
     <MainLayout>
       <div className="grid grid-cols-2 md:w-[80%] md:mx-auto grid-rows-[repeat(13,auto)] lg:grid-rows-[repeat(4,auto)] lg:grid-cols-4 gap-3">
@@ -35,7 +38,7 @@ export const Home = () => {
           onButtonClick={handleProjectOneClick}
         />
         <Social
-          className=" border border-black justify-center relative bg-dark-black row-start-4 row-end-5 col-start-1 col-end-2 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-2"
+          className="border border-black justify-center relative bg-dark-black row-start-4 row-end-5 col-start-1 col-end-2 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-2"
           iconImage={GithubIcon}
           path="https://github.com/rumaisanaveed"
         />
@@ -107,8 +110,11 @@ const Skills = () => {
       </h1>
       <div className="w-full">
         {skills.map((skill, index) => (
-          <div className="bg-dark-black mr-1 p-4 h-16 w-16 inline-block rounded-2xl">
-            <img src={skill.img} alt="skill" key={index} />
+          <div
+            className="bg-dark-black mr-1 p-4 h-16 w-16 inline-block rounded-2xl"
+            key={index}
+          >
+            <img src={skill.img} alt="skill" />
           </div>
         ))}
       </div>

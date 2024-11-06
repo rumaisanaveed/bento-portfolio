@@ -56,7 +56,13 @@ export const projectsData = [
     description:
       "Emoji Vault is a dynamic web application that lets users quickly search for and access their favorite emojis to use anywhere.",
     liveLink: "https://emoji-vault.vercel.app/",
-    techStack: ["Tailwind CSS", "Ant design", "Context Api", "Axios"],
+    techStack: [
+      "React.js",
+      "Tailwind CSS",
+      "Ant design",
+      "Context Api",
+      "Axios",
+    ],
     projectDetails: {
       overview:
         "Designed to prioritize user experience, it is built with React.js and Tailwind CSS to ensure a sleek, high-performing, and responsive design across all devices.",
@@ -85,7 +91,14 @@ export const projectsData = [
     description:
       "ResuMaker is a versatile web application designed to make resume creation simple and efficient for users preparing for their next roles.",
     liveLink: "https://resume-maker-kit.netlify.app/",
-    techStack: ["Next.js", "Firebase", "Clerk", "Ant design", "Tailwind CSS"],
+    techStack: [
+      "Next.js",
+      "React.js",
+      "Firebase",
+      "Clerk",
+      "Ant design",
+      "Tailwind CSS",
+    ],
     projectDetails: {
       overview:
         "Built with Next.js and Firebase, it offers a data-driven and responsive experience.",

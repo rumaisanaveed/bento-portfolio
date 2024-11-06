@@ -8,6 +8,8 @@ export default {
         "dark-black": "#181717",
         "custom-black": "#282828",
         "dark-blue": "#0A66C2",
+        "custom-orange": "#FF8B25",
+        "custom-purple": "#9747FF",
       },
 
       backgroundImage: {
