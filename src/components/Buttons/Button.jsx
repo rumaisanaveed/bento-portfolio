@@ -19,15 +19,14 @@ export const Button = ({ onClick, icon = false }) => {
 };
 
 const ProjectButton = ({ projectId }) => {
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top when button is clicked
+  };
   return (
     <Link
-      to={
-        projectId === 1
-          ? "https://emoji-vault.vercel.app/"
-          : "https://resume-maker-kit.netlify.app/"
-      }
-      target="_blank"
+      to={projectId === 1 ? "/project/1" : "/project/2"}
       className="flex items-center justify-center bg-white backdrop-blur-md rounded-full absolute bottom-3 left-3 shadow-md h-10 w-10"
+      onClick={handleClick}
     >
       <img src={UpArrow} alt="arrow" />
     </Link>
