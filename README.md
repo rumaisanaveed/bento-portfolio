@@ -1,4 +1,3 @@
-```markdown
 # Bento-Style Portfolio
 
 A visually stunning and minimalistic portfolio designed to showcase my work and skills in a unique, organized way. Inspired by the bento box layout, this portfolio emphasizes simplicity, elegance, and functionality, making it easy to navigate through projects, skills, and contact information.
