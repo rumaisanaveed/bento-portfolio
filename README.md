@@ -43,7 +43,7 @@ Check out the live demo here: [rumaisa.netlify.app](https://rumaisa.netlify.app)
    npm start
    ```
 
-The portfolio should now be running on [http://localhost:3000](http://localhost:3000).
+The portfolio should now be running on [http://localhost:3000](http://localhost:5173).
 
 ## 📈 Future Enhancements
 
