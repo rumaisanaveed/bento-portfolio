@@ -59,7 +59,4 @@ Feel free to reach out with feedback or questions. Let's connect!
 - [LinkedIn](https://www.linkedin.com/in/rumaisa-naved-a6b96a230/)
 - [Instagram](https://www.instagram.com/techgirl_guide/profilecard/?igsh=MXc5Z2Rtd21nYTdqdg==)
 
----
-
 Thank you for visiting! I hope this portfolio inspires your own creative journey. 😊
-```
