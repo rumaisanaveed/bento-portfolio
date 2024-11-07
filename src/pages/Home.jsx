@@ -2,7 +2,7 @@ import React from "react";
 import { MainLayout } from "../layouts/MainLayout";
 import LinkedInIcon from "../assets/icons/linkedin.svg";
 import EmojiVaultBg from "../assets/images/emojiProjectBg.png";
-import { Button } from "../components/Buttons/Button";
+import ProjectButton, { Button } from "../components/Buttons/Button";
 import GithubIcon from "../assets/icons/github.svg";
 import InstaIcon from "../assets/icons/instagram.svg";
 import ResuMakerBg from "../assets/images/resumakerProjectBg.png";
@@ -34,6 +34,7 @@ export const Home = () => {
           className="row-start-5 row-end-6 col-start-1 col-end-3 bg-[#FF8B25] lg:row-start-1 lg:row-end-3 lg:col-start-4 lg:col-end-5"
           image={EmojiVaultBg}
           onButtonClick={handleProjectOneClick}
+          projectId={1}
         />
         <Social
           className="border border-black justify-center relative bg-dark-black row-start-4 row-end-5 col-start-1 col-end-2 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-2"
@@ -49,6 +50,7 @@ export const Home = () => {
           className="row-start-6 row-end-7 col-start-1 col-end-3 bg-[#A133FF] lg:row-start-2 lg:row-end-4 lg:col-start-3 lg:col-end-4"
           image={ResuMakerBg}
           onButtonClick={handleProjectTwoClick}
+          projectId={2}
         />
         <Skills />
         <ResumeDownload />
@@ -82,7 +84,7 @@ const Social = ({ iconImage, className, path }) => {
   );
 };
 
-const Project = ({ image, className, onButtonClick }) => {
+const Project = ({ image, className, projectId }) => {
   return (
     <div
       className={`border border-[#B3B3B3] relative rounded-3xl ${className}`}
@@ -94,7 +96,7 @@ const Project = ({ image, className, onButtonClick }) => {
       }}
     >
       <div className="mt-[50%]"></div>
-      <Button onClick={onButtonClick} />
+      <ProjectButton projectId={projectId} />
     </div>
   );
 };

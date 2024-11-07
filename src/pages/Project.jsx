@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../constants";
 import { MainLayout } from "../layouts/MainLayout";
 import RightArrow from "../assets/icons/rightArrow.svg";
@@ -126,16 +126,13 @@ export const Project = () => {
 
 const DemoButton = ({ to }) => {
   return (
-    <a
-      href={to}
+    <Link
+      to={to}
       target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex"
+      className="text-base max-w-36 font-medium flex items-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-4 py-1"
     >
-      <button className="text-base max-w-36 font-medium flex items-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-4 py-1">
-        <p>Live Demo</p>
-        <img src={RightArrow} alt="arrow" />
-      </button>
-    </a>
+      <p>Live Demo</p>
+      <img src={RightArrow} alt="arrow" />
+    </Link>
   );
 };
