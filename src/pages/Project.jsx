@@ -129,7 +129,7 @@ const DemoButton = ({ to }) => {
     <Link
       to={to}
       target="_blank"
-      className="text-base max-w-36 font-medium flex items-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-4 py-1"
+      className="text-base w-36 md:max-w-36 font-medium flex items-center justify-center gap-2 text-custom-black border-2 border-custom-black rounded-full px-2 md:px-4 py-1"
     >
       <p>Live Demo</p>
       <img src={RightArrow} alt="arrow" />
