@@ -62,11 +62,11 @@ export const Home = () => {
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-5 lg:py-0 p-10 place-content-center bg-white border border-[#B3B3B3] rounded-3xl row-start-1 row-end-3 col-start-1 col-end-3 lg:row-start-1 lg:row-end-2">
+    <div className="flex flex-col gap-5 px-6 py-10 md:p-10 place-content-center bg-white border border-[#B3B3B3] rounded-3xl row-start-1 row-end-3 col-start-1 col-end-3 lg:row-start-1 lg:row-end-2">
       <h1 className="text-5xl font-semibold uppercase text-black">Hey 👋🏻</h1>
-      <p className="text-[#0D1117] text-xl">
+      <p className="text-[#0D1117] text-lg md:text-xl w-full tracking-wide md:tracking-wider leading-8 lg:leading-9">
         I’m Rumaisa, a passionate <b>Software Engineer</b> who loves
-        building&nbsp;<b>pixel-perfect interfaces</b>&nbsp; that deliver&nbsp;
+        developing&nbsp;<b>pixel perfect interfaces</b>&nbsp;that deliver&nbsp;
         <b>seamless functionality.</b>
       </p>
     </div>
