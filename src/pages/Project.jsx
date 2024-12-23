@@ -25,11 +25,9 @@ export const Project = () => {
             <h1 className="text-black text-3xl lg:text-4xl koulen-regular font-medium">
               {projectData.title}
             </h1>
-            {projectId === 1 && (
-              <DemoButton to="https://emoji-vault.vercel.app/" />
-            )}
+            {projectId === 1 && <Button to="https://emoji-vault.vercel.app/" />}
             {projectId === 2 && (
-              <DemoButton to="https://resume-maker-kit.netlify.app/" />
+              <Button to="https://resume-maker-kit.netlify.app/" />
             )}
           </div>
           <p className="text-black font-medium text-xl max-w-md">
@@ -124,7 +122,7 @@ export const Project = () => {
   );
 };
 
-const DemoButton = ({ to }) => {
+const Button = ({ to }) => {
   return (
     <Link
       to={to}

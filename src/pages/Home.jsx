@@ -144,19 +144,23 @@ const Experience = () => {
       <h1 className="text-black font-bold text-3xl lg:text-5xl uppercase koulen-regular">
         Work Experience
       </h1>
-      <div className="flex flex-col lg:flex-row gap-2 lg:gap-0 lg:items-center justify-between">
-        <h2 className="font-medium text-xl">
-          Associate Software Engineer - Native Brains
-        </h2>
-        <p className="font-medium text-lg">Feb 2024 - June 2024</p>
-      </div>
-      <ol className="list-decimal px-4 text-lg">
-        {experience.map((listItem, index) => (
-          <li key={index} className="text-[#0D1117] pt-2">
-            {listItem.point}
-          </li>
-        ))}
-      </ol>
+      {experience.map((experience, index) => (
+        <div key={index}>
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-0 lg:items-center justify-between">
+            <h2 className="font-medium text-xl">
+              {experience.title} - {experience.companyName}
+            </h2>
+            <p className="font-medium text-lg">{experience.duration}</p>
+          </div>
+          <ol className="list-decimal px-4 text-lg">
+            {experience.description.map((item, index) => (
+              <li className="text-[#0D1117] pt-2" key={index}>
+                {item}
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))}
     </div>
   );
 };

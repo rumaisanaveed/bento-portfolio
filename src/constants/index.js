@@ -19,12 +19,12 @@ export const skills = [
     tooltipText: "React.js",
   },
   {
-    img: Tailwind,
-    tooltipText: "Tailwind CSS",
-  },
-  {
     img: Next,
     tooltipText: "Next.js",
+  },
+  {
+    img: Tailwind,
+    tooltipText: "Tailwind CSS",
   },
   {
     img: Firebase,
@@ -38,20 +38,31 @@ export const skills = [
     img: Framer,
     tooltipText: "Framer Motion",
   },
+  // html, css, js, ant design, redux, github, vs code, postman, slack, jira, git agile methodologies, next auth, clerk
+  // mongodb, nodejs, express js, restful apis
 ];
 
 export const experience = [
+  // add experience
   {
-    point:
+    title: "Associate Software Engineer",
+    companyName: "Native Brains",
+    duration: "May 2024 - June 2024",
+    description: [
       "Translated wireframes into functional and responsive front-end code, contributing to a seamless user experience and efficient project development.",
-  },
-  {
-    point:
       "Collaborated closely with backend developers and designers, ensuring smooth integration of design elements and APIs to meet project requirements and deadlines.",
+      "Followed best coding practices, including clean and maintainable code, and integrated RESTful APIs and services, which enhanced the overall project performance and scalability.",
+    ],
   },
   {
-    point:
-      "Followed best coding practices, including clean and maintainable code, and integrated RESTful APIs and services, which enhanced the overall project performance and scalability.",
+    title: "Frontend Developer Intern",
+    companyName: "Native Brains",
+    duration: "Feb 2024 - April 2024",
+    description: [
+      "Developed responsive front-end web applications using React, TypeScript and Tailwind CSS, improving user engagement by 20% and contributing to the company's overall performance",
+      "Granted additional code review responsibilities after demonstrating strong attention to detail, leading to a 30% reduction in post-release bugs.",
+      "Collaborated with senior developers in code reviews, enhancing team efficiency and strengthening code quality across all projects.",
+    ],
   },
 ];
 
