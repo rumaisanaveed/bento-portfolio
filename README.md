@@ -60,11 +60,7 @@ Feel free to reach out with feedback or questions. Let's connect!
 
 Thank you for visiting! I hope this portfolio inspires your own creative journey. 😊
 
----
-
 ## 🍿 **Video**
 You can watch a quick demo of **Bento Portfolio** below:
 
 https://github.com/user-attachments/assets/00f5533e-8c82-43d2-9790-f00b08e9d601
-
----
